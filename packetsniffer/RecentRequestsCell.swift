@@ -33,6 +33,15 @@ class RecentRequestsCell: UITableViewCell {
             rightLabel.isHidden = true
             
         case 0,1:
+            if(indexPath.row==0) {
+                leftLabel.text = "开始时间"
+                rightLabel.text = "-"
+            }
+            else {
+                leftLabel.text = "持续时间"
+                rightLabel.text = "-"
+            }
+            
             startConnectBtn.isHidden = true
             leftLabel.isHidden = false
             rightLabel.isHidden = false

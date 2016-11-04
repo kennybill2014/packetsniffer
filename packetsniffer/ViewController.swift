@@ -41,7 +41,7 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     
     @available(iOS 2.0, *)
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
-        guard indexPath.row == 0 else {
+        guard indexPath.row != 2 else {
             return 60
         }
         return 43
